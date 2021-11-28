@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MenuItem */
+.menu {
   display: flex;
-  flex-direction: column;
+  margin-left: 200px;
+  width: 951px;
+  height: 94px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 16px;
+}
+.menu-line {
+  width: 951px;
+}
+.avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.cart {
+  height: 30px;
+  width: 30px;
+}
+.menu-items {
+  display: flex;
+  width: 636px;
+  height: 54px;
+  cursor: pointer;
+}
+.menuItem {
+  padding: 15px 10px;
+  line-height: 16px;
+}
+.menuItem {
+  position: relative;
+}
+.menuItem:hover {
+  color: rgb(236, 116, 72);
+}
+.menuItem::before {
+  transition: 0.2s all ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 50%;
+}
+.menuItem:hover::before {
+  bottom: 0px;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgb(236, 116, 72);
 }
 
-.App-link {
-  color: #61dafb;
+.menuItem.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-family: "Kumbh Sans", sans-serif;
+  width: 190px;
+  margin: 0px 30px 5px 0px;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  margin: 16px 0px;
 }

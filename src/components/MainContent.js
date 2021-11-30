@@ -6,7 +6,7 @@ import ThirdThumbnails from "../images/image-product-3.jpg";
 import FourthThumbnails from "../images/image-product-4.jpg";
 import ProductDetail from "../components/ProductDetail";
 
-const MainContent = () => {
+const MainContent = ({ items, setItems }) => {
   const [mainImg, setMainImg] = useState(FirstThumbnails);
   return (
     <div className="slider">
@@ -41,7 +41,7 @@ const MainContent = () => {
           />
         </div>
       </div>
-      <ProductDetail />
+      <ProductDetail items={items} setItems={setItems} />
     </div>
   );
 };

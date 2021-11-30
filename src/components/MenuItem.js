@@ -28,7 +28,8 @@ class MenuItem extends React.Component {
           <div className="menu-imgs">
             <div>
               <button className="cart-btn" onClick={() => this.ToggleShow()}>
-                <img className="cart" src={cart} alt="cart-icon" />
+                <img className="cart-icon" src={cart} alt="cart-icon" />
+                <span className="cart-count">{this.props.cartCount}</span>
               </button>
               {this.state.show && <CartItem />}
             </div>

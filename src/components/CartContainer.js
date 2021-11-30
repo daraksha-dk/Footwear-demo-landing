@@ -26,6 +26,7 @@ class CartContainer extends React.Component {
           -
         </button>
         <p className="input">{this.state.count}</p>
+
         <button onClick={this.IncrementCount} className="increase-btn">
           +
         </button>

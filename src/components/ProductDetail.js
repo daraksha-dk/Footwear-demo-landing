@@ -2,7 +2,7 @@ import React from "react";
 import "./ProductDetail.scss";
 import CartContainer from "./CartContainer";
 import AddCart from "./AddCart";
-const ProductDetail = () => {
+const ProductDetail = ({ items, setItems }) => {
   return (
     <div className="product-detail">
       <h3 className="company-name">SNEAKER COMPANY</h3>
@@ -20,10 +20,11 @@ const ProductDetail = () => {
         <h4 class="old-price">$250.00</h4>
       </div>
       <div className="detail-bottom">
-        <CartContainer />
-        <AddCart />
+        <CartContainer items={items} setItems={setItems} />
+        <AddCart items={items} setItems={setItems} />
       </div>
     </div>
   );
 };
+
 export default ProductDetail;

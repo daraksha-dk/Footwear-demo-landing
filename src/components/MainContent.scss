@@ -24,3 +24,21 @@
 .bottom-slider {
   border-radius: 10px;
 }
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: rgb(236, 116, 72);
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 20px;
+}

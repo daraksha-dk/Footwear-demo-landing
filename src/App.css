@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&family=Bellefair&display=swap");
+
 /* MenuItem */
+
 .menu {
   display: flex;
   margin-left: 200px;
@@ -14,6 +17,16 @@
   width: 951px;
 }
 .avatar {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.avatar {
+  position: relative;
+}
+.avatar:hover {
+  color: rgb(236, 116, 72);
+  outline: auto;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -66,11 +79,27 @@
 .title {
   font-family: "Kumbh Sans", sans-serif;
   width: 190px;
-  margin: 0px 30px 5px 0px;
+
   align-items: center;
   font-size: 30px;
   font-weight: 700;
   height: 30px;
   line-height: 30px;
   margin: 16px 0px;
+}
+.menu-imgs {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  width: 87px;
+  height: 37px;
+  background: fixed;
+}
+.cart-btn {
+  background: none;
+  border: none;
+}
+.cart {
+  cursor: pointer;
 }

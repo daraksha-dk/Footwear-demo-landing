@@ -1,0 +1,77 @@
+.product-detail {
+  width: 540px;
+  height: 612px;
+  padding: 20px;
+  line-height: 16px;
+}
+.company-name {
+  color: rgb(255, 125, 26);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.product-name {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.product-info {
+  width: 500px;
+  height: 120px;
+  color: rgb(104, 112, 125);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.price {
+  width: 500px;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.price-info {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.price-num {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.discount {
+  background-color: rgb(255, 237, 224);
+  border-radius: 5px;
+  color: rgb(255, 125, 26);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 5px;
+}
+.old-price {
+  color: rgb(182, 188, 200);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration-color: rgb(182, 188, 200);
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+}
+.detail-bottom {
+  display: flex;
+  column-gap: 20px;
+  row-gap: 20px;
+}

@@ -2,14 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 import MenuItem from "./components/MenuItem";
 import MainContent from "./components/MainContent";
+
 function App() {
   const [items, setItems] = useState({
-    count: 1,
-    items: [
-      {
-        id: 1,
-      },
-    ],
+    count: 0,
+    show: false,
   });
   return (
     <div className="App">

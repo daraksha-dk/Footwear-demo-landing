@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProductDetail.scss";
 import CartContainer from "./CartContainer";
-import AddCart from "./AddCart";
 const ProductDetail = ({ items, setItems }) => {
   return (
     <div className="product-detail">

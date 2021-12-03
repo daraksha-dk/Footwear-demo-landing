@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Avatar from "../images/image-avatar.png";
 import cart from "../images/icon-cart.svg";
 import CartItem from "./CartItem";

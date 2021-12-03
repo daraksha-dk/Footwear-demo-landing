@@ -4,8 +4,6 @@ import cart from "../images/icon-cart.svg";
 import CartItem from "./CartItem";
 
 const MenuItem = ({ items, setItems }) => {
-  const [showPanel, togglePanel] = useState(false);
-
   return (
     <>
       <div className="menu">
@@ -21,12 +19,17 @@ const MenuItem = ({ items, setItems }) => {
           <div>
             <button
               className="cart-btn"
-              onClick={() => togglePanel(!showPanel)}
+              onClick={() =>
+                setItems({
+                  ...items,
+                  show: !items.show,
+                })
+              }
             >
               <img className="cart-icon" src={cart} alt="cart-icon" />
               <span className="cart-count">{items.count}</span>
             </button>
-            {showPanel && <CartItem items={items} setItems={setItems} />}
+            {items.show && <CartItem items={items} setItems={setItems} />}
           </div>
           <img className="avatar" src={Avatar} alt="avatar" />
         </div>

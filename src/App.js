@@ -7,6 +7,7 @@ function App() {
   const [items, setItems] = useState({
     count: 0,
     show: false,
+    addToCart: false,
   });
   return (
     <div className="App">

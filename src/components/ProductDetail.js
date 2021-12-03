@@ -21,7 +21,6 @@ const ProductDetail = ({ items, setItems }) => {
       </div>
       <div className="detail-bottom">
         <CartContainer items={items} setItems={setItems} />
-        <AddCart items={items} setItems={setItems} />
       </div>
     </div>
   );

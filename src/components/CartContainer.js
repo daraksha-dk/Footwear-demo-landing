@@ -1,24 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CartContainer.scss";
-
+import IconCart from "../images/icon-cart.svg";
 const CartContainer = ({ items, setItems }) => {
-  return (
-    <div className="cart-container">
-      <button
-        onClick={() => setItems({ count: items.count - 1, items: items.items })}
-        className="decrease-btn"
-      >
-        -
-      </button>
-      <p className="input">{items.count}</p>
+  const [count, setCount] = useState(items.count || 0);
 
-      <button
-        onClick={() => setItems({ count: items.count + 1, items: items.items })}
-        className="increase-btn"
-      >
-        +
-      </button>
-    </div>
+  return (
+    <>
+      <div className="cart-container">
+        <button onClick={() => setCount(count - 1)} className="decrease-btn">
+          -
+        </button>
+        <p className="input">{count}</p>
+
+        <button
+          onClick={() => {
+            console.log("test", count, items);
+
+            setCount(count + 1);
+          }}
+          className="increase-btn"
+        >
+          +
+        </button>
+      </div>
+
+      <div>
+        <button
+          className="add-cart"
+          onClick={() => {
+            setItems({
+              ...items,
+              count: count,
+              show: true,
+              addToCart: true,
+            });
+          }}
+        >
+          <img className="addcart" src={IconCart} alt="icon-cart" />
+          Add to cart
+        </button>
+      </div>
+    </>
   );
 };
 
